@@ -1,0 +1,18 @@
+Package: mesh2d
+Title: Plot Mesh Structures in 2D
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Michael",
+           family = "Sumner",
+           role = c("aut", "cre"),
+           email = "mdsumner@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Plot mesh structures in 2D, these provide basic structured plots for line segments, triangles
+ and quads from low-structure data. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    gridBase
