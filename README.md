@@ -48,6 +48,35 @@ segments2d(sort(rnorm(50)), rnorm(50), col = hcl.colors(10), add = FALSE, lwd = 
 
 <img src="man/figures/README-unnamed-chunk-2-3.png" width="100%" />
 
+``` r
+qm <- quadmesh::quadmesh(volcano)
+
+xx <- qm$vb[1, qm$ib]
+yy <- qm$vb[2, qm$ib]
+quads2d(jitter(xx, 1.1), jitter(yy, 1.2), col = colourvalues::color_values(t(volcano)), add = FALSE)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+``` r
+
+
+tm <- anglr::as.mesh3d(raster::raster(volcano), max_triangles = 1500)
+
+xx <- tm$vb[1, tm$it]
+yy <- tm$vb[2, tm$it]
+triangles2d(xx, yy, col = colourvalues::color_values(colMeans(matrix(tm$vb[3, tm$it], 3))), add = FALSE)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-2.png" width="100%" />
+
+``` r
+
+
+## same as in rgl (but without the per-vertex colour)
+#rgl::triangles3d(xx, yy, tm$vb[3, tm$it], color = colourvalues::colour_values(tm$vb[3, ]))
+```
+
 ## Code of Conduct
 
 Please note that the mesh2d project is released with a [Contributor Code

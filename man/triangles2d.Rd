@@ -27,6 +27,8 @@ acceptable. See the function \code{\link[=xy.coords]{xy.coords()}} for details}
 
 \item{...}{further arguments passed to \code{\link[=grid.polygon]{grid.polygon()}}}
 
+\item{alpha}{transparency}
+
 \item{lwd}{line width}
 
 \item{lty}{line type}

@@ -21,6 +21,7 @@
 #' @param col fill colour
 #' @param lty line type
 #' @param lwd line width
+#' @param alpha transparency
 #'
 #' @return called for its side effect, drawing triangles on a plot
 #' @export
